@@ -7,7 +7,7 @@ const Footer2 = () => {
   return (
     <>
       <div className="parent-background">
-        <div class="p-10 flex flex-col sm:flex-row justify-between mt-28 h-[400px]">
+        <div class="p-10 flex flex-col sm:flex-row justify-between mt-28">
           <div class="mt-4 p-2 text-white">
             <h1 className="text-white font-bold text-1xl md:text-3xl mb-2">
               ANHE
@@ -50,7 +50,7 @@ const Footer2 = () => {
 
           <div class="mt-4 p-2 text-white">
             <h1 className="font-bold text-2xl">Service Links</h1>
-            <hr className="w-[50%] mt-3"></hr>
+            <hr className="w-[25%] md:w-[25%] lg:w-[60%] mt-3"></hr>
             <p className="mt-4">
               <a href="#">Home</a>
             </p>
@@ -74,7 +74,7 @@ const Footer2 = () => {
 
           <div class="mt-4 p-2 text-white">
             <h1 className="font-bold text-2xl m">Follow Us</h1>
-            <hr className="w-[50%] mt-3"></hr>
+            <hr className="w-[25%] md:w-[25%] lg:w-[60%] mt-3"></hr>
 
             <p class=" mt-4 flex items-center space-x-4 my-2">
               <a href="#" class="mr-2">

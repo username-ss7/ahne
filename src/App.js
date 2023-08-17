@@ -4,10 +4,8 @@ import Insurance from "../src/components/Insurance";
 import About from "../src/components/About";
 import Contact from "./components/Contact";
 import Policy from "../src/components/Policy";
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-
 import Footer2 from "./components/Footer2";
 import Copyright from "./components/Copyright";
 

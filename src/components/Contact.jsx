@@ -34,18 +34,20 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className=" container grid grid-cols-1 md:grid-cols-3 m-10 gap-2 mx-10 mt-10 p-8">
-        <div className="my-5 ml-10 bg-white col-span-2 ">
-          <div className="shadow-top-md p-10 ">
+      {/* form part */}
+
+      <div className="flex justify-center">
+        <div className=" grid grid-cols-1 min-w-full lg:grid-cols-3  lg:px-10 xl-px-32 py-16 rounded-lg px-8 mt-24 gap-7 lg:mx-20 ">
+          <div className="bg-white  lg:col-span-2 shadow-top-md p-10">
             <h4 className="text-center font-bold text-3xl">
               Drop Us A Message For Any Query
             </h4>
 
             <form>
-              <div className="grid  grid-cols-2 gap-5 pb-4 pt-4">
+              <div className="grid grid-cols-2 gap-5 pb-4 pt-4">
                 <input
                   type="text"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1  "
+                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1 "
                   placeholder="Username"
                   onChange={inputHandle}
                   name="name"
@@ -54,7 +56,7 @@ const Contact = () => {
 
                 <input
                   type="text"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 "
+                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
                   placeholder="Email"
                   onChange={inputHandle}
                   name="email"
@@ -63,7 +65,7 @@ const Contact = () => {
 
                 <input
                   type="text"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 "
+                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
                   placeholder="Phone Number"
                   onChange={inputHandle}
                   name="phone"
@@ -72,7 +74,7 @@ const Contact = () => {
 
                 <input
                   type="text"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 "
+                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
                   placeholder="Subject"
                   onChange={inputHandle}
                   name="subject"
@@ -94,22 +96,18 @@ const Contact = () => {
                   value="Send message"
                   // onClick={submitHandle}
 
-                  className=" flex m-auto focus-outline-none bg-blue-500 border-0 py-2 px-8 hover:bg-indigo-600  text-lg
+                  className=" flex m-auto focus-outline-none bg-sky-400  py-2 px-8 hover:bg-indigo-600 text-lg
 
-                text-white font-bold col-span-2 "
+                text-white font-bold col-span-2 rounded-lg border-2 shadow-sm border-slate-300"
                 />
               </div>
             </form>
           </div>
-        </div>
 
-        {/* information part */}
-
-        <div className=" container mt-5 my-10 bg-white p-4  ">
-          <div className="p-5 shadow-top-md mr-10 ">
+          <div className="  border p-10 shadow-top-md">
             <h4 className=" p-3 text-4xl">Contact info</h4>
 
-            <h4 className=" text-2xl bg-blue-500 p-5 text-white flex flex-cols space-x-4  ">
+            <h4 className=" text-xl bg-sky-400 p-3 text-white flex flex-cols space-x-2 mb-3  rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -126,11 +124,11 @@ const Contact = () => {
               <div>
                 <h1>location</h1>
 
-                <span className="text-xl">Benguluru</span>
+                <span className="text-xl font-normal">Benguluru</span>
               </div>
             </h4>
 
-            <h4 className=" text-2xl bg-blue-500 p-5 text-white flex flex-cols space-x-4">
+            <h4 className=" text-1xl bg-sky-400 p-5 text-white flex flex-cols space-x-2  mb-3 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -149,17 +147,17 @@ const Contact = () => {
 
                 <p>
                   {" "}
-                  <span className="text-xl">+91 9876567870</span>{" "}
+                  <span className="text-xl">9876567870</span>{" "}
                 </p>
 
                 <p>
                   {" "}
-                  <span className="text-xl">+0 (967) 870 765</span>{" "}
+                  <span className="text-xl">(967) 870 765</span>{" "}
                 </p>
               </div>
             </h4>
 
-            <h4 className=" text-2xl bg-blue-500 p-5 text-white flex flex-cols space-x-4">
+            <h4 className=" text-xl bg-sky-400 p-5 text-white flex flex-cols space-x-2  mb-3 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -204,7 +202,7 @@ const Contact = () => {
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        className="m-2 p-2"
+        className="m-auto p-2 rounded-md"
       ></iframe>
     </>
   );

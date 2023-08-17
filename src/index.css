@@ -2,12 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: white;
-    overflow-x: hidden;
-}
-.width-5{
-    width: 5rem;
-    height: 5rem;
-}
 

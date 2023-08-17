@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import img2 from "../assets/images/image2.jpg";
 import img3 from "../assets/images/belowNavbarimg.jpg";
+import About from "../assets/images/about-img-2.png"
 import Business from "../assets/images/business.png";
 import Blog1 from "../assets/images/blog1.png";
 import Blog2 from "../assets/images/blog2.png";
@@ -151,7 +152,6 @@ const Homepage = () => {
             />
           </div>
           <div className="p-5">
-            {/* <h3 className='text-xl font-semibold mb-2'>Card 3 Title</h3> */}
             <p class="text-black text-roboto,sens-serif hover:text-white text-xl text-center font-bold">
               Approval Time
             </p>
@@ -179,76 +179,55 @@ const Homepage = () => {
 
       {/* part 3  About us*/}
 
-      <div className=" container mx-auto pl-10 mt-20 ">
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 h-[700px] ">
-          <div className="max-w-screen-x2 bg-white overflow-hidden p-4 mt-20 ml-10">
-            <span className="text-blue-500 font-semibold text-base leading-6 text-left">
-              {" "}
-              About Us{" "}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-10 md:mx-20 lg:mx-32 mt-28">
+      <div>
+        <span className="text-[#31abfc] font-bold text-sm">About Us</span>
+
+        <h1 className="text-[#262566] font-bold text-4xl mt-4">
+          Insurance Always Ready to Protect
+          <br />
+          your Life & Business
+        </h1>
+
+        <p className="mt-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+        </p>
+
+        <p className="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
+          <div className="flex items-center">
+            <AiOutlineSafety className="text-4xl text-[#262566]" />
+            <span className="text-[#262566] text-base pl-3 font-bold">
+              We always Care about Client Satisfaction
             </span>
-
-            <h2 className="text-[#050b2a] font-bold text-2xl md:text-3xl mb-2 mt-2">
-              Insurance Always Ready to Protect your Life & Business
-            </h2>
-
-            <p className="font-normal text-base leading-6  text-left text-gray-500 mb-2 mt-6">
-              We offer tailored financial solutions with transparency,
-              expertise, and efficiency. Your success is our commitment. Partner
-              with us for a brighter financial future.
-            </p>
-
-            <p className="font-normal text-base leading-6  text-left text-gray-500 mb-2 mt-6">
-              We offer tailored financial solutions with transparency,
-              expertise, and efficiency. Your success is our commitment. Partner
-              with us for a brighter financial future."
-            </p>
-            <div className="flex flex-wrap">
-              <div className="w-full md:w-1/2">
-                <ul className="list-disc list-inside text-blue-900 mt-4 md:mt-19">
-                  <li className="flex items-center">
-                    <AiOutlineSafety className="text-blue-900 text-6xl mr-2" />
-
-                    <p className="text-1xl font-bold">
-                      We Are Always Care About Client Satisfy
-                    </p>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="w-full md:w-1/2">
-                <ul className="list-disc list-inside text-blue-900 mt-4 md:mt-19">
-                  <li className="flex items-center">
-                    <MdSafetyDivider className="text-blue-900 text-6xl mr-2" />
-
-                    <p className="text-1xl font-bold">
-                      100+ Community Involvement
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
 
-          <div
-            className="w-full h-80 md:h-auto bg-fit bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url('https://flexa-react.envytheme.com/images/about-img-2.jpg')`,
-            }}
-          ></div>
+          <div className="flex items-center">
+            <MdSafetyDivider className="text-4xl text-[#262566]" />
+            <span className="text-[#262566] text-base pl-3 font-bold">
+              100+ Community Involvement
+            </span>
+          </div>
         </div>
       </div>
+
+      <div className="insurance-about-img px-16 mt-10">
+        <img src={About} className="w-full h-auto" alt="About Us" />
+      </div>
+    </div>
 
       {/* part 3  About us end*/}
 
       {/* part 8 number contact start */}
 
       <div className="bg-[#050b2a] rounded-md min-h-[250px] w-[100%] p-4 flex flex-col md:flex-row justify-evenly items-center mt-10 font-roboto">
-        {/* First nested div */}
         <div className="text-white font-bold text-xl p-4 rounded md:m-4 md:w-1/2 lg:w-1/3">
           <p>Have you any question? Ask Us anything, we’d love to answer!</p>
         </div>
 
-        {/* Second nested div */}
         <div className="w-full md:w-auto m-3 p-3">
           <button className="p-3 bg-white text-xl rounded-md w-full md:w-full lg:w-[200px]">
             Contact Us
@@ -280,14 +259,13 @@ const Homepage = () => {
         <div className="flex justify-center p-8  ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-xl flex items-center ">
             <div className="text-center">
-              <h3 className="flex justify-center p-5">
-                {/* <AiFillCar size='5rem' color="blue" /> */}
-              </h3>
+              <h3 className="flex justify-center p-5"></h3>
 
               <h3 className="text-xl font-semibold mb-2">Personal Loans</h3>
 
               <p className="text-gray-600">
-              Flexible funding for various personal expenses, from medical bills to vacations.
+                Flexible funding for various personal expenses, from medical
+                bills to vacations.
               </p>
 
               <a
@@ -303,13 +281,11 @@ const Homepage = () => {
         <div className="flex justify-center  p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-md flex items-center ">
             <div className="text-center">
-              {/* <h3 className="flex justify-center p-5">
-      <MdOutlineHomeWork size='5rem' color="blue" /></h3> */}
-
               <h3 className="text-xl font-semibold mb-2">Home Mortgages</h3>
 
               <p className="text-gray-600">
-              Turn your dream of homeownership into reality with our competitive mortgage options.
+                Turn your dream of homeownership into reality with our
+                competitive mortgage options.
               </p>
 
               <a
@@ -325,12 +301,11 @@ const Homepage = () => {
         <div className="flex justify-center  p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-md flex items-center">
             <div className="text-center">
-              {/* <h3 className="flex justify-center p-3"><AiFillInsurance size='5rem' color="blue" /></h3> */}
-
               <h3 className="text-xl font-semibold mb-2">Business Loans</h3>
 
               <p className="text-gray-600">
-              Fuel your business growth with our tailored financing for startups and established enterprises.
+                Fuel your business growth with our tailored financing for
+                startups and established enterprises.
               </p>
 
               <a
@@ -346,8 +321,6 @@ const Homepage = () => {
         <div className="flex justify-center p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-xl flex items-center ">
             <div className="text-center">
-              {/* <h3 className="flex justify-center p-5"><SiYourtraveldottv size='5rem' color="blue" /></h3> */}
-
               <h3 className="text-xl font-semibold mb-2">Travel Insurance</h3>
 
               <p className="text-gray-600">
@@ -368,8 +341,6 @@ const Homepage = () => {
         <div className="flex justify-center  p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-md flex items-center ">
             <div className="text-center">
-              {/* <h3 className="flex justify-center p-5"><GiHealthNormal size='5rem' color="blue" /></h3> */}
-
               <h3 className="text-xl font-semibold mb-2">Health Insurance</h3>
 
               <p className="text-gray-600">
@@ -390,8 +361,6 @@ const Homepage = () => {
         <div className="flex justify-center  p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-md flex items-center ">
             <div className="text-center">
-              {/* <h3 className="flex justify-center p-5"><GiLifeBar size='5rem' color="blue" /></h3> */}
-
               <h3 className="text-xl font-semibold mb-2">Life Insurance</h3>
 
               <p className="text-gray-600">
@@ -413,38 +382,6 @@ const Homepage = () => {
       {/* part 4 end Our Services*/}
 
       {/* part 5 sofa-image */}
-      {/* <div className=" container mx-auto pl-10 mt-1 ">
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 h-[700px] ">
-          <div className="max-w-screen-x2 bg-white overflow-hidden p-4 mt-20 ml-10">
-            <span className="text-blue-500 font-semibold text-base leading-6 text-left">
-              {" "}
-              About Us{" "}
-            </span>
-
-            <h2 className="text-blue-900 font-bold text-2xl md:text-3xl mb-2 mt-2">
-              Insurance Always Ready to Protect your Life & Business
-            </h2>
-
-            <p className="font-normal text-base leading-6  text-left text-gray-500 mb-2 mt-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            </p>
-
-            <p className="font-normal text-base leading-6  text-left text-gray-500 mb-2 mt-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
-            </p>
-          </div>
-
-          <div
-            className="w-full h-80 md:h-auto bg-fit bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url('https://flexa-react.envytheme.com/images/about-img-2.jpg')`,
-            }}
-          ></div>
-        </div>
-      </div> */}
 
       <div className="flex justify-center mt-28">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 bg-[#262566] w-10/12 rounded-[15px]">
@@ -458,19 +395,19 @@ const Homepage = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-sm  md:text-medium lg:text-3xl text-white">
+            <h1 className="mt-3 lg:mt-0 md:mt-0 font-bold text-sm  md:text-medium lg:text-3xl text-white">
               {" "}
               Save up to 30% when you buy small <br></br>business insurance in
               online
             </h1>
 
-            <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 text-white">
+            <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
               Contact Us
             </button>
           </div>
         </div>
       </div>
-      {/* part 5 sofa-image */}
+      {/* part 5 sofa-image end  */}
 
       {/* part 6 start our team */}
 
@@ -537,27 +474,29 @@ const Homepage = () => {
       {/* part 6  our team end */}
 
       {/* part 7  start*/}
-      <div className="mt-28 font-roboto flex  items-center justify-evenly bg-[#050b2a]   py-50 min-h-[200px] w-full">
-        <div className="p-4  rounded m-4">
+
+      <div className="mt-28 font-roboto grid grid-cols-1 lg:grid-cols-4 items-center bg-[#050b2a] py-8 min-h-[200px] w-full overflow-hidden">
+        <div className="p-4 rounded m-4 text-center">
           <h3 className="text-white font-bold text-3xl">950 +</h3>
           <h3 className="text-white font-bold text-xl">Completed Project</h3>
         </div>
 
-        <div className="p-4  rounded m-4">
+        <div className="p-4 rounded m-4 text-center">
           <h3 className="text-white font-bold text-3xl">850 +</h3>
           <h3 className="text-white font-bold text-xl">Winning Awards</h3>
         </div>
 
-        <div className="p-4  rounded m-4">
+        <div className="p-4 rounded m-4 text-center">
           <h3 className="text-white font-bold text-3xl">550 +</h3>
           <h3 className="text-white font-bold text-xl">Clients</h3>
         </div>
 
-        <div className="p-4  rounded m-4">
+        <div className="p-4 rounded m-4 text-center">
           <h3 className="text-white font-bold text-3xl">440 +</h3>
           <h3 className="text-white font-bold text-xl">Countries</h3>
         </div>
       </div>
+
       {/* part 7  end*/}
 
       {/* part 9 start */}

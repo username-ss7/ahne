@@ -1,10 +1,11 @@
 import React from "react";
 import "./Style.css";
-import About1 from "../assets/images/image2.jpg";
+import About from "../assets/images/about-img-2.png"
 import InsuranceImg from "../assets/images/insurance-img.png";
 import Business from "../assets/images/business.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { AiOutlineSafety } from "react-icons/ai";
+import { MdSafetyDivider } from "react-icons/md";
 import { faCheck, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Insurance = () => {
@@ -99,55 +100,44 @@ const Insurance = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-10 md:mx-20 lg:mx-32 mt-28">
-        <div>
-          <span className="text-[#31abfc] font-bold text-sm">About Us</span>
+      <div>
+        <span className="text-[#31abfc] font-bold text-sm">About Us</span>
 
-          <h1 className="text-[#262566] font-bold text-4xl mt-4">
-            Insurance Always Ready to Protect
-            <br></br>your Life & Business
-          </h1>
+        <h1 className="text-[#262566] font-bold text-4xl mt-4">
+          Insurance Always Ready to Protect
+          <br />
+          your Life & Business
+        </h1>
 
-          <p className="mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus
-          </p>
+        <p className="mt-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+        </p>
 
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
-          </p>
+        <p className="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
+        </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
-            <div>
-              <FontAwesomeIcon
-                icon={faCheck}
-                className="text-2xl text-[#262566]"
-              />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
+          <div className="flex items-center">
+            <AiOutlineSafety className="text-4xl text-[#262566]" />
+            <span className="text-[#262566] text-base pl-3 font-bold">
+              We always Care about Client Satisfaction
+            </span>
+          </div>
 
-              <span className="text-[#262566] text-base pl-3 font-bold">
-                We are always Care about Client Satisfy
-              </span>
-            </div>
-
-            <div>
-              <FontAwesomeIcon
-                icon={faCheck}
-                className="text-2xl text-[#262566]"
-              />
-
-              <span className="text-[#262566] text-base pl-3 font-bold">
-                100+ Community Involvement
-              </span>
-            </div>
+          <div className="flex items-center">
+            <MdSafetyDivider className="text-4xl text-[#262566]" />
+            <span className="text-[#262566] text-base pl-3 font-bold">
+              100+ Community Involvement
+            </span>
           </div>
         </div>
-
-        <div className=" insurance-about-img px-16 mt-10">
-          <img src={About1} className="w-full h-auto"></img>
-        </div>
       </div>
+
+      <div className="insurance-about-img px-16 mt-10">
+        <img src={About} className="w-full h-auto" alt="About Us" />
+      </div>
+    </div>
 
       <div className="mt-20">
         <div className="text-center">
@@ -165,7 +155,7 @@ const Insurance = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-10 md:mx-20 lg:mx-32 mt-28 mb-20">
-          <div className=" insurance-about-img pr-20">
+          <div className=" insurance-about-img pr-0 lg:pr-20 md:pr-15 mb-5 lg:mb-0 md:mb-0">
             <img src={InsuranceImg} className="w-full h-auto"></img>
           </div>
 
@@ -226,7 +216,7 @@ const Insurance = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-20">
+      <div className="flex justify-center mt-28">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 bg-[#262566] w-10/12 rounded-[15px]">
           <div>
             {" "}
@@ -238,13 +228,13 @@ const Insurance = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-sm  md:text-medium lg:text-3xl text-white">
+            <h1 className="mt-3 lg:mt-0 md:mt-0 font-bold text-sm  md:text-medium lg:text-3xl text-white">
               {" "}
               Save up to 30% when you buy small <br></br>business insurance in
               online
             </h1>
 
-            <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 text-white">
+            <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
               Contact Us
             </button>
           </div>
