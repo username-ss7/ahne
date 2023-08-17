@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import img2 from "../assets/images/image2.jpg";
 import img3 from "../assets/images/belowNavbarimg.jpg";
-import About from "../assets/images/about-img-2.png"
+import About from "../assets/images/about-img-2.png";
 import Business from "../assets/images/business.png";
 import Blog1 from "../assets/images/blog1.png";
 import Blog2 from "../assets/images/blog2.png";
@@ -14,25 +14,29 @@ import Team3 from "../assets/images/team3.png";
 import "../components/Style.css";
 import { AiOutlineSafety } from "react-icons/ai";
 import { MdSafetyDivider } from "react-icons/md";
+import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
+import { faShieldHalved } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
   return (
     <>
-      <div class="relative h-screen w-screen flex items-center justify-center font-sans">
-        <img src={img3} alt="Image" class="h-full w-full object-cover" />
+<div class="relative h-screen flex items-center justify-center font-sans">
+  <img src={img3} alt="Image" class="h-full w-[100%] object-cover" />
 
-        <div class="absolute inset-y-0 left-0 flex flex-col justify-center h-full w-1/2 bg-blue-700 bg-opacity-60">
-          <div class="mx-8 text-white font-roboto">
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">
-              Need Instant Loan !!
-            </h1>
-            <p className="mt-4 text-xl">
-              "Need cash now? Get an instant loan for urgent expenses. Simple
-              online application, quick approval, and funds deposited fast."
-            </p>
-          </div>
-        </div>
-      </div>
+  <div class="absolute inset-y-0 left-0 flex flex-col justify-center h-full w-1/2 bg-blue-700 bg-opacity-60 overflow-auto">
+    <div class="mx-8 text-white font-roboto">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">
+        Need Instant Loan !!
+      </h1>
+      <p className="mt-4 text-xl">
+        "Need cash now? Get an instant loan for urgent expenses. Simple online application, quick approval, and funds deposited fast."
+      </p>
+    </div>
+  </div>
+</div>
+
 
       {/* part 2 */}
 
@@ -52,30 +56,30 @@ const Homepage = () => {
         </p>
       </div>
 
-      <div className="md:block lg:flex lg:justify-between flex flex-col md:flex-row justify-center items-center p-8 space-y-4 md:space-y-0 md:space-x-4 mt-[100px]">
-        <div className="mx-2 max-w-sm bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden h-96 hover:bg-[#262566] hover:text-white">
-          <div className="w-20 justify-center ml-[39%] ">
-            <img
-              src={img2}
-              alt="Card 3"
-              className="p-2 w-full h-20 object-cover justify-center rounded-[100%] m"
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-10 mt-20">
+        {/* Feature Card 1 */}
+        <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
+          <div className="w-20 mx-auto mt-6">
+            <FontAwesomeIcon
+              icon={faCircleUser}
+              alt="Icon"
+              className="p-2 w-full h-20 object-cover"
             />
           </div>
           <div className="p-5">
-            <p class="text-black hover:text-white text-roboto,sens-serif  text-xl text-center font-bold  ">
+            <p className="text-xl text-center font-bold hover:text-white">
               Loan Amount
             </p>
-
-            <div className="text-center ">
+            <div className="text-center">
               <div className="flex flex-col items-center">
                 <p className="mt-4 text-grey-700 hover:text-white text-xl">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  Key attributes defining the loan offer, encompassing rate,
+                  term, amount, and conditions for borrowing.
                 </p>
-                <div className="mt-6 ">
+                <div className="mt-6">
                   <FontAwesomeIcon
                     icon={faCircleRight}
-                    size="2xl"
+                    size="2x"
                     className="text-blue-800"
                   />
                 </div>
@@ -83,29 +87,29 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className="mx-2 max-w-sm bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden h-96 hover:bg-[#262566] hover:text-white">
-          <div className="w-20 justify-center ml-[39%] ">
-            <img
-              src={img2}
-              alt="Card 3"
-              className="p-2 w-full h-20 object-cover justify-center rounded-[100%] m"
+        <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
+          <div className="w-20 mx-auto mt-6">
+            <FontAwesomeIcon
+              icon={faShieldHalved}
+              alt="Icon"
+              className="p-2 w-full h-20 object-cover"
             />
           </div>
           <div className="p-5">
-            <p class="text-black text-roboto,sens-serif hover:text-white text-xl text-center font-bold">
+            <p className="text-xl text-center font-bold hover:text-white">
               Monthly Payment
             </p>
 
             <div className="text-center ">
               <div className="flex flex-col items-center">
                 <p className="mt-4 text-grey-700 hover:text-white text-xl">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  Fixed amount to be paid per month towards loan repayment,
+                  covering principal and interest.
                 </p>
                 <div className="mt-6 ">
                   <FontAwesomeIcon
                     icon={faCircleRight}
-                    size="2xl"
+                    size="2x"
                     className="text-blue-800"
                   />
                 </div>
@@ -113,29 +117,29 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className="mx-2 max-w-sm bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden h-96 hover:bg-[#262566] hover:text-white">
-          <div className="w-20 justify-center ml-[39%] ">
-            <img
-              src={img2}
-              alt="Card 3"
-              className="p-2 w-full h-20 object-cover justify-center rounded-[100%] m"
+        <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
+          <div className="w-20 mx-auto mt-6">
+            <FontAwesomeIcon
+              icon={faLock}
+              alt="Icon"
+              className="p-2 w-full h-20 object-cover"
             />
           </div>
           <div className="p-5">
-            <p class="text-black text-roboto,sens-serif hover:text-white text-xl text-center font-bold">
+            <p className="text-xl text-center font-bold hover:text-white">
               Collateral
             </p>
 
             <div className="text-center ">
               <div className="flex flex-col items-center">
                 <p className="mt-4 text-grey-700 hover:text-white text-xl">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  Asset pledged by the borrower to secure the loan, offered as
+                  repayment if default occurs.
                 </p>
                 <div className="mt-6 ">
                   <FontAwesomeIcon
                     icon={faCircleRight}
-                    size="2xl"
+                    size="2x"
                     className="text-blue-800"
                   />
                 </div>
@@ -143,29 +147,29 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className="mx-2 max-w-sm bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden h-96 hover:bg-[#262566] hover:text-white ">
-          <div className="w-20 justify-center ml-[39%] ">
-            <img
-              src={img2}
-              alt="Card 3"
-              className="p-2 w-full h-20 object-cover justify-center rounded-[100%] m"
+        <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
+          <div className="w-20 mx-auto mt-6">
+            <FontAwesomeIcon
+              icon={faHandshake}
+              alt="Icon"
+              className="p-2 w-full h-20 object-cover"
             />
           </div>
           <div className="p-5">
-            <p class="text-black text-roboto,sens-serif hover:text-white text-xl text-center font-bold">
+            <p className="text-xl text-center font-bold hover:text-white">
               Approval Time
             </p>
 
             <div className="text-center ">
               <div className="flex flex-col items-center">
                 <p className="mt-4 text-grey-700 hover:text-white text-xl">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  The duration taken by lenders to review, assess, and decide
+                  upon a loan application's acceptance.
                 </p>
                 <div className="mt-6 ">
                   <FontAwesomeIcon
                     icon={faCircleRight}
-                    size="2xl"
+                    size="2x"
                     className="text-blue-800"
                   />
                 </div>
@@ -180,44 +184,48 @@ const Homepage = () => {
       {/* part 3  About us*/}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-10 md:mx-20 lg:mx-32 mt-28">
-      <div>
-        <span className="text-[#31abfc] font-bold text-sm">About Us</span>
+        <div>
+          <span className="text-[#31abfc] font-bold text-sm">About Us</span>
 
-        <h1 className="text-[#262566] font-bold text-4xl mt-4">
-          Insurance Always Ready to Protect
-          <br />
-          your Life & Business
-        </h1>
+          <h1 className="text-[#262566] font-bold text-4xl mt-4">
+            Insurance Always Ready to Protect
+            <br />
+            your Life & Business
+          </h1>
 
-        <p className="mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-        </p>
+          <p className="mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus
+          </p>
 
-        <p className="mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
-        </p>
+          <p className="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
-          <div className="flex items-center">
-            <AiOutlineSafety className="text-4xl text-[#262566]" />
-            <span className="text-[#262566] text-base pl-3 font-bold">
-              We always Care about Client Satisfaction
-            </span>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
+            <div className="flex items-center">
+              <AiOutlineSafety className="text-4xl text-[#262566]" />
+              <span className="text-[#262566] text-base pl-3 font-bold">
+                We always Care about Client Satisfaction
+              </span>
+            </div>
 
-          <div className="flex items-center">
-            <MdSafetyDivider className="text-4xl text-[#262566]" />
-            <span className="text-[#262566] text-base pl-3 font-bold">
-              100+ Community Involvement
-            </span>
+            <div className="flex items-center">
+              <MdSafetyDivider className="text-4xl text-[#262566]" />
+              <span className="text-[#262566] text-base pl-3 font-bold">
+                100+ Community Involvement
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="insurance-about-img px-16 mt-10">
-        <img src={About} className="w-full h-auto" alt="About Us" />
+        <div className="insurance-about-img px-16 mt-10">
+          <img src={About} className="w-full h-auto" alt="About Us" />
+        </div>
       </div>
-    </div>
 
       {/* part 3  About us end*/}
 
