@@ -61,7 +61,7 @@ const NavigationBar = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                to="/"
+                  to="/"
                   className="text-white hover:text-blue-500"
                   onClick={() => setIsDrawerOpen(false)}
                 >
@@ -71,7 +71,7 @@ const NavigationBar = () => {
 
               <li>
                 <Link
-                to="/about"
+                  to="/about"
                   className="text-white hover:text-blue-500"
                   onClick={() => setIsDrawerOpen(false)}
                 >
@@ -81,7 +81,7 @@ const NavigationBar = () => {
 
               <li>
                 <Link
-                to="/insurance"
+                  to="/insurance"
                   className="text-white hover:text-blue-500"
                   onClick={() => setIsDrawerOpen(false)}
                 >
@@ -91,7 +91,7 @@ const NavigationBar = () => {
 
               <li>
                 <Link
-                to="/Policy"
+                  to="/Policy"
                   className="text-white hover:text-blue-500"
                   onClick={() => setIsDrawerOpen(false)}
                 >
@@ -101,11 +101,41 @@ const NavigationBar = () => {
 
               <li>
                 <Link
-                to="/contact"
+                  to="/contact"
                   className="text-white hover:text-blue-500"
                   onClick={() => setIsDrawerOpen(false)}
                 >
                   Contact
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/DropShipping"
+                  className="text-white hover:text-blue-500"
+                  onClick={() => setIsDrawerOpen(false)}
+                >
+                  DropShipping
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/TandT"
+                  className="text-white hover:text-blue-500"
+                  onClick={() => setIsDrawerOpen(false)}
+                >
+                  Tours&Travel
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/Detail"
+                  className="text-white hover:text-blue-500"
+                  onClick={() => setIsDrawerOpen(false)}
+                >
+                  Details
                 </Link>
               </li>
             </ul>
@@ -121,7 +151,7 @@ const NavigationBar = () => {
         <ul className="hidden lg:flex space-x-4">
           <li>
             <Link
-            to="/"
+              to="/"
               className="text-white hover:text-blue-500"
               activeClassName="font-bold"
             >
@@ -131,7 +161,7 @@ const NavigationBar = () => {
 
           <li>
             <Link
-            to="/about"
+              to="/about"
               className="text-white hover:text-blue-500"
               activeClassName="font-bold"
             >
@@ -141,7 +171,7 @@ const NavigationBar = () => {
 
           <li>
             <Link
-            to="/insurance"  
+              to="/insurance"
               className="text-white hover:text-blue-500"
               activeClassName="font-bold"
             >
@@ -151,7 +181,7 @@ const NavigationBar = () => {
 
           <li>
             <Link
-            to="/Policy"
+              to="/Policy"
               className="text-white hover:text-blue-500"
               activeClassName="font-bold"
             >
@@ -160,13 +190,43 @@ const NavigationBar = () => {
           </li>
           <li>
             <Link
-            to="/contact"
+              to="/contact"
               className="text-white hover:text-blue-500"
               activeClassName="font-bold"
             >
               Contact
             </Link>
           </li>
+
+          <li>
+                <Link
+                  to="/DropShipping"
+                  className="text-white hover:text-blue-500"
+                  onClick={() => setIsDrawerOpen(false)}
+                >
+                  DropShipping
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/TandT"
+                  className="text-white hover:text-blue-500"
+                  onClick={() => setIsDrawerOpen(false)}
+                >
+                  Tours&Travel
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/Detail"
+                  className="text-white hover:text-blue-500"
+                  onClick={() => setIsDrawerOpen(false)}
+                >
+                  Details
+                </Link>
+              </li>
         </ul>
 
         <div className="hidden lg:flex justify-center text-white ">
