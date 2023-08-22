@@ -9,8 +9,13 @@ import Navbar from "./components/Navbar";
 import Footer2 from "./components/Footer2";
 import Copyright from "./components/Copyright";
 import DropShipping from "./components/DropShipping";
-import Detail from "./components/Detail";
+import Development from "./components/Development";
 import TandT from "./components/TandT";
+import Loan from "./components/Loan";
+import PersonalLoan from "./components/PersonalLoan";
+import AutoLoanTopUp from "./components/AutoLoanTopUp";
+import Mortgage from "./components/Mortgage";
+import HomeLoan from "./components/HomeLoan";
 
 const App = () => {
   return (
@@ -24,7 +29,12 @@ const App = () => {
         <Route path="/Contact" element=<Contact /> />
         <Route path="/DropShipping" element=<DropShipping /> />
         <Route path="/TandT" element=<TandT /> />
-        <Route path="/Detail" element=<Detail /> />
+        <Route path="/Development" element=<Development /> />
+        <Route path="/Loan" element=<Loan /> />
+        <Route path="/PersonalLoan" element=<PersonalLoan /> />
+        <Route path="/AutoLoanTopUp" element=<AutoLoanTopUp /> />
+        <Route path="/Mortgage" element=<Mortgage /> />
+        <Route path="/HomeLoan" element=<HomeLoan /> />
       </Routes>
       <Footer2 />
       <Copyright />

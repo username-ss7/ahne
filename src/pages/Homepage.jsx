@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import img2 from "../assets/images/image2.jpg";
@@ -22,21 +23,21 @@ import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 const Homepage = () => {
   return (
     <>
-<div class="relative h-screen flex items-center justify-center font-sans">
-  <img src={img3} alt="Image" class="h-full w-[100%] object-cover" />
+      <div class="relative h-screen flex items-center justify-center font-sans">
+        <img src={img3} alt="Image" class="h-full w-[100%] object-cover" />
 
-  <div class="absolute inset-y-0 left-0 flex flex-col justify-center h-full w-1/2 bg-blue-700 bg-opacity-60 overflow-auto">
-    <div class="mx-8 text-white font-roboto">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">
-        Need Instant Loan !!
-      </h1>
-      <p className="mt-4 text-xl">
-        "Need cash now? Get an instant loan for urgent expenses. Simple online application, quick approval, and funds deposited fast."
-      </p>
-    </div>
-  </div>
-</div>
-
+        <div class="absolute inset-y-0 left-0 flex flex-col justify-center h-full w-1/2 bg-blue-700 bg-opacity-60 overflow-auto">
+          <div class="mx-8 text-white font-roboto">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">
+              Need Instant Loan !!
+            </h1>
+            <p className="mt-4 text-xl">
+              "Need cash now? Get an instant loan for urgent expenses. Simple
+              online application, quick approval, and funds deposited fast."
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* part 2 */}
 
@@ -276,12 +277,12 @@ const Homepage = () => {
                 bills to vacations.
               </p>
 
-              <a
-                href="/insurance-details/"
+              <Link
+                to="/PersonalLoan"
                 className="mt-4 inline-block text-blue-500 hover:underline"
               >
                 Learn More <i className="bx bx-chevrons-right ml-1"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -289,19 +290,19 @@ const Homepage = () => {
         <div className="flex justify-center  p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-md flex items-center ">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2">Home Mortgages</h3>
+              <h3 className="text-xl font-semibold mb-2">Mortgage Loan</h3>
 
               <p className="text-gray-600">
                 Turn your dream of homeownership into reality with our
                 competitive mortgage options.
               </p>
 
-              <a
-                href="/insurance-details/"
+              <Link
+                to="/Mortgage"
                 className="mt-4 inline-block text-blue-500 hover:underline"
               >
                 Learn More <i className="bx bx-chevrons-right ml-1"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -309,19 +310,19 @@ const Homepage = () => {
         <div className="flex justify-center  p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-md flex items-center">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2">Business Loans</h3>
+              <h3 className="text-xl font-semibold mb-2">Business Loan</h3>
 
               <p className="text-gray-600">
                 Fuel your business growth with our tailored financing for
                 startups and established enterprises.
               </p>
 
-              <a
-                href="/insurance-details/"
+              <Link
+                to="/BusinessLoan"
                 className="mt-4 inline-block text-blue-500 hover:underline"
               >
                 Learn More <i className="bx bx-chevrons-right ml-1"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -329,19 +330,19 @@ const Homepage = () => {
         <div className="flex justify-center p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-xl flex items-center ">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2">Travel Insurance</h3>
+              <h3 className="text-xl font-semibold mb-2">Home Loan</h3>
 
               <p className="text-gray-600">
                 Leader ipsum dolor sit amet consuring lised faisism dolor sit
                 amet.
               </p>
 
-              <a
-                href="/insurance-details/"
+              <Link
+                to="/HomeLoan"
                 className="mt-4 inline-block text-blue-500 hover:underline"
               >
                 Learn More <i className="bx bx-chevrons-right ml-1"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -349,19 +350,19 @@ const Homepage = () => {
         <div className="flex justify-center  p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-md flex items-center ">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2">Health Insurance</h3>
+              <h3 className="text-xl font-semibold mb-2">Insurance</h3>
 
               <p className="text-gray-600">
                 Leader ipsum dolor sit amet consuring lised faisism dolor sit
                 amet.
               </p>
 
-              <a
-                href="/insurance-details/"
+              <Link
+                to="/Insurance"
                 className="mt-4 inline-block text-blue-500 hover:underline"
               >
                 Learn More <i className="bx bx-chevrons-right ml-1"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -369,19 +370,19 @@ const Homepage = () => {
         <div className="flex justify-center  p-8 ">
           <div className="bg-white p-3 rounded-lg shadow-top-md shadow-md flex items-center ">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2">Life Insurance</h3>
+              <h3 className="text-xl font-semibold mb-2">Auto Loan Top Up</h3>
 
               <p className="text-gray-600">
                 Leader ipsum dolor sit amet consuring lised faisism dolor sit
                 amet.
               </p>
 
-              <a
-                href="/insurance-details/"
+              <Link
+                to="/AutoLoantopUp"
                 className="mt-4 inline-block text-blue-500 hover:underline"
               >
                 Learn More <i className="bx bx-chevrons-right ml-1"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

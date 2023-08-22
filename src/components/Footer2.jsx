@@ -1,6 +1,7 @@
 import React from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail, MdLocationPin } from "react-icons/md";
+import { Link } from "react-router-dom";
 import "./Style.css";
 
 const Footer2 = () => {
@@ -52,24 +53,51 @@ const Footer2 = () => {
             <h1 className="font-bold text-2xl">Service Links</h1>
             <hr className="w-[25%] md:w-[25%] lg:w-[60%] mt-3"></hr>
             <p className="mt-4">
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </p>
 
             <p className="mt-1">
-              <a href="#">About</a>
+            <Link to="/About">About</Link>
+              
             </p>
 
             <p className="mt-1">
-              <a href="#">Insurance</a>
+            <Link to="/Insurance">Insurance</Link>
+              
             </p>
 
             <p className="mt-1">
-              <a href="#">Privacy Policy</a>
+            <Link to="/Policy">Privacy Policy</Link>
+              
             </p>
 
             <p className="mt-1">
-              <a href="#">Contact</a>
+            <Link to="/Contact">Contact</Link>
+              
             </p>
+
+            <p className="mt-1">
+            <Link to="/DropShipping">DropShipping</Link>
+              
+            </p>
+
+
+            <p className="mt-1">
+            <Link to="/Tours&Travel">Tours&Travel</Link>
+              
+            </p>
+
+            <p className="mt-1">
+            <Link to="/Development">Development</Link>
+              
+            </p>
+
+            <p className="mt-1">
+            <Link to="/Loan">Loan</Link>
+              
+            </p>
+
+
           </div>
 
           <div class="mt-4 p-2 text-white">

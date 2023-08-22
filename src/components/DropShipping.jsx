@@ -9,8 +9,6 @@ import Shipping3 from "../assets/images/drop-shipping3.png";
 import Shipping4 from "../assets/images/drop-shipping4.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock , faEarthAmericas , faWallet , faNewspaper } from "@fortawesome/free-solid-svg-icons";
-
 
 export default function DropShipping() {
   return (
@@ -109,7 +107,7 @@ export default function DropShipping() {
         </div>
       </div>
 
-      <div className="text-center mt-20">
+      <div className="text-center mt-24">
         <h1 className="text-[#262566] font-bold text-4xl mt-4">
           Jumpstart your Dropshipping business
         </h1>
@@ -117,10 +115,6 @@ export default function DropShipping() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mx-10 md:mx-20 lg:mx-32 mt-10">
         <div className="mt-10">
-          <div>
-            <FontAwesomeIcon icon={faClock} />{" "}
-          </div>
-
           <h1 className="text-[#12b48b] font-semibold text-2xl">
             Lanch for Less
           </h1>
@@ -133,12 +127,6 @@ export default function DropShipping() {
         </div>
 
         <div className="mt-10">
-          <div>
-            <FontAwesomeIcon
-              icon={faEarthAmericas}
-              className="text-blue-500 text-4xl"
-            />
-          </div>
           <h1 className="text-[#12b48b] font-semibold text-2xl">
             Work on what matters
           </h1>
