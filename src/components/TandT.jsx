@@ -1,6 +1,10 @@
 import React from "react";
 import Dubai from "../assets/images/Dubai.jpg";
 import Maldives from "../assets/images/Maldives.jpg";
+import Andamans from "../assets/images/Andamans.jpg";
+import Alps from "../assets/images/Alps.jpg";
+import IndianTrip from "../assets/images/IndianTrip.jpg";
+import Honeymoon from "../assets/images/Honeymoon.jpg";
 
 const TandT = () => {
   return (
@@ -23,30 +27,32 @@ const TandT = () => {
         <div>
           <img src={Dubai} className="w-full h-auto"></img>
 
-          <div className="p-8 shadow-2xl">
-            <ul className="flex space-x-4">
-              <li className="text-[#12b48b]">10 April 2020</li>
+          <div className="p-8 shadow-2xl  ">
+            <h4 className=" space-x-4 text-center">
+              <p className="text-[#12b48b] ">
+                10 April 2020
+                <span className="ml-4">Amazing Dubai</span>
+              </p>
+            </h4>
 
-              <li className="text-[#12b48b]">Amazing Dubai</li>
-            </ul>
-
-            <h3 className="text-[#204066] text-xl mt-4 mb-4 font-bold">
+            <h3 className="text-[#204066] text-xl mt-4 mb-4 font-bold text-center">
               Destination Beyond Belief
             </h3>
           </div>
         </div>
 
         <div>
-          <img src={Maldives} className="w-full h-auto"></img>
+          <img src={Andamans} className="w-full h-auto"></img>
 
           <div className="p-8 shadow-2xl">
-            <ul className="flex space-x-4">
-              <li className="text-[#12b48b]">10 April 2020</li>
+            <h4 className=" space-x-4 text-center">
+              <p className="text-[#12b48b] ">
+                10 April 2020
+                <span className="ml-4">Andamans</span>
+              </p>
+            </h4>
 
-              <li className="text-[#12b48b]">Andamans</li>
-            </ul>
-
-            <h3 className="text-[#204066] text-xl mt-4 mb-4 font-bold">
+            <h3 className="text-[#204066] text-xl mt-4 mb-4 font-bold text-center">
               Serene Surrounding
             </h3>
           </div>
@@ -56,13 +62,14 @@ const TandT = () => {
           <img src={Maldives} className="w-full h-auto"></img>
 
           <div className="p-8 shadow-2xl">
-            <ul className="flex space-x-4">
-              <li className="text-[#12b48b]">10 April 2020</li>
+            <h4 className=" space-x-4 text-center">
+              <p className="text-[#12b48b] ">
+                10 April 2020
+                <span className="ml-4">Maldives</span>
+              </p>
+            </h4>
 
-              <li className="text-[#12b48b]">Maldives</li>
-            </ul>
-
-            <h3 className="text-[#204066] text-xl mt-4 mb-4 font-bold">
+            <h3 className="text-[#204066] text-xl mt-4 mb-4 font-bold text-center">
               One stop Destination
             </h3>
           </div>
@@ -77,7 +84,7 @@ const TandT = () => {
           <h1 className="text-2xl text-blue-500 font-bold">
             International Holiday Packages
           </h1>
-          <p className=" text-xl font-semibold  ">
+          <p className=" text-xl font-semibold mt-5 ">
             Whether it’s your first international trip or you have travelled
             abroad multiple times, planning a holiday to a distant land is
             always a special feeling. Our international holiday packages are
@@ -86,11 +93,7 @@ const TandT = () => {
           </p>
         </div>
         <div className="pl-0 md:pl-28 lg:pl-32  mt-12 md:mt-0 lg:mt-0">
-          <img
-            src={Maldives}
-            alt="Image 2"
-            className="w-[100%] h-[auto] rounded"
-          />
+          <img src={Alps} alt="Image 2" className="w-[100%] h-[auto] rounded" />
         </div>
       </div>
 
@@ -100,7 +103,7 @@ const TandT = () => {
       <div className=" mt-28 grid lg:grid-cols-2  mx-10 md:mx-20 lg:mx-32">
         <div className="pr-0 md:pr-28 lg:pr-32">
           <img
-            src={Dubai}
+            src={IndianTrip}
             alt="Image 2"
             className="w-[100%] h-[auto] rounded"
           />
@@ -108,14 +111,17 @@ const TandT = () => {
 
         <div className="  mt-12 md:mt-0 lg:mt-0">
           <h1 className="text-2xl text-blue-500 font-bold">
-            International Holiday Packages
+            Indian Holiday Packages
           </h1>
-          <p className=" text-xl font-semibold  ">
-            Whether it’s your first international trip or you have travelled
-            abroad multiple times, planning a holiday to a distant land is
-            always a special feeling. Our international holiday packages are
-            well-made and hold a high reputation among customers who have been
-            travelling with us.
+          <p className=" text-xl font-semibold mt-5 ">
+            Explore the vibrant tapestry of India through our captivating
+            holiday packages. Immerse yourself in rich culture, historical
+            wonders, and diverse landscapes. From the serene backwaters of
+            Kerala to the majestic forts of Rajasthan, our thoughtfully crafted
+            itineraries offer an authentic experience. With comfortable
+            accommodations and expert guides, your Indian adventure promises to
+            be both enriching and unforgettable. Embrace the allure of India
+            with us!
           </p>
         </div>
       </div>
@@ -125,19 +131,20 @@ const TandT = () => {
       <div className=" mt-28 grid lg:grid-cols-2  mx-10 md:mx-20 lg:mx-32">
         <div>
           <h1 className="text-2xl text-blue-500 font-bold">
-            International Holiday Packages
+            Honeymoon Packages
           </h1>
-          <p className=" text-xl font-semibold  ">
-            Whether it’s your first international trip or you have travelled
-            abroad multiple times, planning a holiday to a distant land is
-            always a special feeling. Our international holiday packages are
-            well-made and hold a high reputation among customers who have been
-            travelling with us.
+          <p className=" text-xl font-semibold mt-5 ">
+            Indulge in bliss with our exquisite honeymoon packages. Discover
+            breathtaking destinations, luxurious accommodations, and
+            personalized experiences that create unforgettable moments for you
+            and your partner. Let romance flourish as we handle all the details,
+            ensuring your honeymoon is a perfect, stress-free escape. Embark on
+            your journey of love today!
           </p>
         </div>
         <div className="pl-0 md:pl-28 lg:pl-32  mt-12 md:mt-0 lg:mt-0">
           <img
-            src={Maldives}
+            src={Honeymoon}
             alt="Image 2"
             className="w-[100%] h-[auto] rounded"
           />

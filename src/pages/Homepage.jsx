@@ -60,7 +60,7 @@ const Homepage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-10 mt-20">
         {/* Feature Card 1 */}
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
-          <div className="w-20 mx-auto mt-6">
+          <div className="w-20 mx-auto mt-6 text-sky-400">
             <FontAwesomeIcon
               icon={faCircleUser}
               alt="Icon"
@@ -77,7 +77,7 @@ const Homepage = () => {
                   Key attributes defining the loan offer, encompassing rate,
                   term, amount, and conditions for borrowing.
                 </p>
-                <div className="mt-6">
+                <div className="mt-6 ">
                   <FontAwesomeIcon
                     icon={faCircleRight}
                     size="2x"
@@ -89,7 +89,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
-          <div className="w-20 mx-auto mt-6">
+          <div className="w-20 mx-auto mt-6 text-sky-400">
             <FontAwesomeIcon
               icon={faShieldHalved}
               alt="Icon"
@@ -119,7 +119,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
-          <div className="w-20 mx-auto mt-6">
+          <div className="w-20 mx-auto mt-6 text-sky-400">
             <FontAwesomeIcon
               icon={faLock}
               alt="Icon"
@@ -149,7 +149,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
-          <div className="w-20 mx-auto mt-6">
+          <div className="w-20 mx-auto mt-6 text-sky-400">
             <FontAwesomeIcon
               icon={faHandshake}
               alt="Icon"
@@ -195,15 +195,20 @@ const Homepage = () => {
           </h1>
 
           <p className="mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus
+            Insurance stands as a steadfast guardian, unyielding in its
+            commitment to safeguard both lives and businesses. In the face of
+            uncertainties, it provides a shield against the unexpected, offering
+            financial protection and peace of mind. With a foundation built on
+            preparedness, insurance remains a constant ally, ready to shield
+            individuals and enterprises from the storms of life.
           </p>
 
           <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
+            For individuals, it offers a safety net against medical expenses and
+            unforeseen accidents. For businesses, it fortifies against risks
+            that could disrupt operations. Whether personal or professional,
+            insurance stands as a testament to prudence, always prepared to step
+            in and mitigate the impact of unforeseen events.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
@@ -258,9 +263,9 @@ const Homepage = () => {
         </h2>
 
         <p className="text-sm md:text-base font-sans">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-          suspendisse ultrices gravida.
+          Explore diverse loans: mortgages, personal, auto, business. Tailored
+          options catering to unique needs, enabling financial aspirations to
+          materialize.
         </p>
       </div>
 
@@ -333,8 +338,8 @@ const Homepage = () => {
               <h3 className="text-xl font-semibold mb-2">Home Loan</h3>
 
               <p className="text-gray-600">
-                Leader ipsum dolor sit amet consuring lised faisism dolor sit
-                amet.
+                Secure your dream home with flexible home loan options and
+                competitive interest rates.
               </p>
 
               <Link
@@ -353,8 +358,8 @@ const Homepage = () => {
               <h3 className="text-xl font-semibold mb-2">Insurance</h3>
 
               <p className="text-gray-600">
-                Leader ipsum dolor sit amet consuring lised faisism dolor sit
-                amet.
+                Protection, peace, and security—insurance shields you from
+                life's uncertainties and unexpected events.
               </p>
 
               <Link
@@ -373,8 +378,8 @@ const Homepage = () => {
               <h3 className="text-xl font-semibold mb-2">Auto Loan Top Up</h3>
 
               <p className="text-gray-600">
-                Leader ipsum dolor sit amet consuring lised faisism dolor sit
-                amet.
+                Elevate your ride with easy auto loan top-up, unlocking enhanced
+                vehicle experiences.
               </p>
 
               <Link
@@ -429,9 +434,9 @@ const Homepage = () => {
           </h1>
 
           <p className="mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.<br></br>{" "}
-            Quis ipsum suspendisse ultrices gravida. Risus
+            Our proficient team blends experience and innovation to provide
+            tailored solutions, guiding you through challenges and towards
+            success with expertise
           </p>
         </div>
 
@@ -519,9 +524,10 @@ const Homepage = () => {
           </h1>
 
           <p className="mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.<br></br>{" "}
-            Quis ipsum suspendisse ultrices gravida. Risus
+            Explore our blog for the freshest insights, covering diverse topics
+            that impact your life, business, and the ever-evolving world around
+            us.<br></br>
+            Discover our latest blog updates.
           </p>
         </div>
 

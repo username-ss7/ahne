@@ -114,9 +114,9 @@ export default function DropShipping() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mx-10 md:mx-20 lg:mx-32 mt-10">
-        <div className="mt-10">
+        <div className="mt-10 text-center">
           <h1 className="text-[#12b48b] font-semibold text-2xl">
-            Lanch for Less
+            Launch for Less
           </h1>
 
           <p className="mt-5">
@@ -126,8 +126,8 @@ export default function DropShipping() {
           </p>
         </div>
 
-        <div className="mt-10">
-          <h1 className="text-[#12b48b] font-semibold text-2xl">
+        <div className="mt-10 text-center">
+          <h1 className="text-[#12b48b] font-semibold text-2xl ">
             Work on what matters
           </h1>
 
@@ -138,7 +138,7 @@ export default function DropShipping() {
           </p>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 text-center">
           <h1 className="text-[#12b48b] font-semibold text-2xl">
             Test for success
           </h1>
@@ -150,7 +150,7 @@ export default function DropShipping() {
           </p>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 text-center">
           <h1 className="text-[#12b48b] font-semibold text-2xl">
             Sell globally
           </h1>

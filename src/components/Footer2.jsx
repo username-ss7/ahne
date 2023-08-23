@@ -13,13 +13,13 @@ const Footer2 = () => {
             <h1 className="text-white font-bold text-1xl md:text-3xl mb-2">
               ANHE
             </h1>
-            <p className="mt-4"> Quisque tincidunt justo in libero </p>
+            <p className="mt-4">Empowering Dreams, Bridging Futures</p>
 
-            <p>ut fermentum quam accumsan.</p>
+            <p>Your Trusted Partner for Financial </p>
 
-            <p> Quisque tincidunt justo in libero </p>
+            <p>Solutions and Personalized Loans.</p>
 
-            <p>ut fermentum quam accumsan.</p>
+            <p>Fast, Flexible, Reliable.</p>
           </div>
 
           <div class="mt-4 p-2 text-white ">
@@ -57,47 +57,36 @@ const Footer2 = () => {
             </p>
 
             <p className="mt-1">
-            <Link to="/About">About</Link>
-              
+              <Link to="/About">About</Link>
             </p>
 
             <p className="mt-1">
-            <Link to="/Insurance">Insurance</Link>
-              
+              <Link to="/Insurance">Insurance</Link>
             </p>
 
             <p className="mt-1">
-            <Link to="/Policy">Privacy Policy</Link>
-              
+              <Link to="/Policy">Privacy Policy</Link>
             </p>
 
             <p className="mt-1">
-            <Link to="/Contact">Contact</Link>
-              
+              <Link to="/Contact">Contact</Link>
             </p>
 
             <p className="mt-1">
-            <Link to="/DropShipping">DropShipping</Link>
-              
-            </p>
-
-
-            <p className="mt-1">
-            <Link to="/Tours&Travel">Tours&Travel</Link>
-              
+              <Link to="/DropShipping">DropShipping</Link>
             </p>
 
             <p className="mt-1">
-            <Link to="/Development">Development</Link>
-              
+              <Link to="/Tours&Travel">Tours&Travel</Link>
             </p>
 
             <p className="mt-1">
-            <Link to="/Loan">Loan</Link>
-              
+              <Link to="/Development">Development</Link>
             </p>
 
-
+            <p className="mt-1">
+              <Link to="/Loan">Loan</Link>
+            </p>
           </div>
 
           <div class="mt-4 p-2 text-white">

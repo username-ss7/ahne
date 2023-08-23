@@ -1,6 +1,13 @@
 import React from "react";
-import { AiFillAndroid, AiOutlineLaptop } from "react-icons/ai";
+import {
+  AiFillAndroid,
+  AiOutlineLaptop,
+  AiOutlineNodeIndex,
+} from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
+
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { BsFillDatabaseFill } from "react-icons/bs";
 
 const Development = () => {
   return (
@@ -29,7 +36,7 @@ const Development = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28">
         <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
-          <div className="flex justify-center">
+          <div className="flex justify-center text-sky-400">
             <FaLaptopCode className="h-[50px] w-[50px]  " />
           </div>
 
@@ -44,7 +51,7 @@ const Development = () => {
         </div>
 
         <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
-          <div className="flex justify-center">
+          <div className="flex justify-center text-sky-400">
             <AiOutlineLaptop className="h-[50px] w-[50px]" />
           </div>
 
@@ -58,7 +65,7 @@ const Development = () => {
           </div>
         </div>
         <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
-          <div className="flex justify-center">
+          <div className="flex justify-center text-sky-400">
             <AiFillAndroid className="h-[50px] w-[50px] " />
           </div>
 
@@ -75,8 +82,8 @@ const Development = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28">
         <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
-          <div className="flex justify-center">
-            <FaLaptopCode className="h-[50px] w-[50px] " />
+          <div className="flex justify-center text-sky-400">
+            <GiArtificialIntelligence className="h-[50px] w-[50px] " />
           </div>
 
           <div className="text-center mt-5">
@@ -90,8 +97,8 @@ const Development = () => {
         </div>
 
         <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
-          <div className="flex justify-center">
-            <AiOutlineLaptop className="h-[50px] w-[50px] " />
+          <div className="flex justify-center text-sky-400">
+            <BsFillDatabaseFill className="h-[50px] w-[50px] " />
           </div>
 
           <div className="text-center mt-5">
@@ -99,12 +106,12 @@ const Development = () => {
             <p className=" text-xl mt-2">Make a career in Data Science</p>
           </div>
         </div>
-        <div className=" hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
-          <div className="flex justify-center">
-            <AiFillAndroid className="h-[50px] w-[50px] " />
+        <div className=" hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white ">
+          <div className="flex justify-center text-sky-400  ">
+            <AiOutlineNodeIndex className="h-[50px] w-[50px] " />
           </div>
 
-          <div className="text-center mt-5">
+          <div className="text-center mt-5 " >
             <h2 className="text-2xl font-semibold mb-2 ">
               Fullstack Development
             </h2>
