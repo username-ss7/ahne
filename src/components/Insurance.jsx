@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Style.css";
 import About from "../assets/images/about-img-2.png";
 import InsuranceImg from "../assets/images/insurance-img.png";
@@ -245,10 +246,11 @@ const Insurance = () => {
               Save up to 30% when you buy small <br></br>business insurance in
               online
             </h1>
-
+              <Link to='/Contact'>
             <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
               Contact Us
             </button>
+            </Link>
           </div>
         </div>
       </div>

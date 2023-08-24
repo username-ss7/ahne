@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import whatsapp from "../assets/images/whatsaap.png";
 import { Link } from "react-router-dom";
+import ScrollUpButton from "../components/ScrollUpButton";
 
 const NavigationBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const [show, setShow] = useState(false);
+
+  
 
   return (
     <>
@@ -15,11 +18,13 @@ const NavigationBar = () => {
             ANHE
           </div>
 
-          <div className="fixed right-10 bottom-10">
+          <div className="fixed right-15 bottom-7">
             <Link to="https://wa.me/917909072226?I want to Know more About this?">
               <img src={whatsapp} width="70" />
             </Link>
           </div>
+
+          <ScrollUpButton />
 
           <div className="lg:hidden">
             {/* Hamburger Icon */}
@@ -155,11 +160,11 @@ const NavigationBar = () => {
                     <Link
                       to="/Loan"
                       className="text-white hover:text-blue-500 relative"
-                      onClick={() => setIsDrawerOpen(false)}
+                      onClick={() => setIsDrawerOpen(false) }
                     >
                       Loan
                     </Link>
-
+                      
                     <div className="absolute bg-blue-950 w-34 flex flex-col text-white hover:text-white cursor-pointer">
                       <p className="hover:bg-sky-500 hover:text-white border-b-2  p-1">
                         <Link
@@ -216,7 +221,7 @@ const NavigationBar = () => {
               </ul>
 
               <div className="mt-4">
-                <Link to="/insurance">
+                <Link to="/Contact">
                   <button className="bg-sky-500 rounded-md p-3 font-semibold">
                     Get a Quote
                   </button>
@@ -375,9 +380,11 @@ const NavigationBar = () => {
           </ul>
 
           <div className="hidden lg:flex justify-center text-white ">
-            <button className="bg-sky-500 rounded-md p-3 font-semibold">
-              Get a Quote
-            </button>
+            <Link to="/Contact">
+              <button className="bg-sky-500 rounded-md p-3 font-semibold">
+                Get a Quote
+              </button>
+            </Link>
           </div>
         </div>
       </nav>

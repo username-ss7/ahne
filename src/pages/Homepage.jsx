@@ -243,9 +243,11 @@ const Homepage = () => {
         </div>
 
         <div className="w-full md:w-auto m-3 p-3">
+        <Link to='/Contact'>
           <button className="p-3 bg-white text-xl rounded-md w-full md:w-full lg:w-[200px]">
             Contact Us
           </button>
+          </Link>
         </div>
       </div>
 
@@ -414,10 +416,11 @@ const Homepage = () => {
               Save up to 30% when you buy small <br></br>business insurance in
               online
             </h1>
-
+              <Link to='/Contact'>
             <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
               Contact Us
             </button>
+            </Link>
           </div>
         </div>
       </div>

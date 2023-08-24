@@ -27,11 +27,11 @@ const HomeLoan = () => {
           Enjoy hassle-free home loan processing with simplified home loan
           document requirements. <br />
           You are just a few clicks away from the best Home Loan offer in your
-          city. Currently home loan interest rate starts at 8.50% p.a for all
+          city. Currently home loan interest rate starts at 8.50% <br />p.a for all
           loan amounts.
-          <br />
+          
           Requirement for home loan documents includes identity and address
-          proof (KYC documents), income proof, photographs along a duly filled
+          proof (KYC documents), income<br /> proof, photographs along a duly filled
           and signed home loan application form.
         </p>
       </div>
